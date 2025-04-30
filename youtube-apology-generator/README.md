@@ -1,12 +1,40 @@
-# React + Vite
+YOUTUBER APOLOGY VIDEO GENERATOR
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ever been **cooked in the groupchat**? Forgot to credit the meme creator? Accidentally said a **slur**? Posted something **cringe** on your story?
 
-Currently, two official plugins are available:
+Don't worry. This app has your back.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎬 What It Does
 
-## Expanding the ESLint configuration
+- Takes your shameful confession (gently)
+- Generates a **dramatic influencer-style apology script**
+- Lets you **record your apology** with webcam
+- Add sad violin 🎻, black & white filter 🎞️, and clown mode 🤡 (not included in downloaded video sorry)
+- Downloads your apology video (soon in `.mp4`!)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+| Feature                 | Status     |
+|------------------------|------------|
+| AI-generated apologies | ✅ |
+| Dramatic teleprompter  | ✅ |
+| Sad violin music       | ✅ |
+| Clown mode             | ✅ ✅ ✅ |
+| MP4 conversion         | 🚧 coming soon |
+| Public redemption      | 😬 results may vary |
+
+## 🧠 Tech Stack
+
+- React + Vite
+- OpenRouter (AI apologies)
+- MediaRecorder API
+- CloudConvert (soon, for mp4s)
+- Shame and regret
+
+## 🛠️ How to Run Locally
+
+```bash
+git clone https://github.com/shaisalym/youtube-apology-generator.git
+cd youtube-apology-generator
+npm install
+npm run dev

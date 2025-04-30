@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>YouTube Apology Generator</h1>
+      <h1>YouTuber Apology Generator</h1>
       <h2 className="description">
         For when you're cooked, this is your <span style={{ color: '#D72638' }}>redemption arc.</span>
       </h2>
