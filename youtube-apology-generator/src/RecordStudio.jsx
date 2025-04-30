@@ -168,7 +168,7 @@ function RecordStudio() {
   
       <div className="start-controls">
         <p className="recording-warning">
-          ⚠️ WARNING: Filters, emojis, and music are only included for a more immersive recording experience. Feel free to screen record if you would like these effects to be in your video.
+          ⚠️ WARNING: Effects are only included for a more immersive recording experience. If you would like them to be in your video, please screen record.<br></br>For the best experience, use PC or laptop.
         </p>
   
         <div className="start-button-row">
