@@ -1,10 +1,14 @@
 import { useState } from 'react';
 import './App.css';
+import { useNavigate } from 'react-router-dom';
+
 
 function App() {
   const [confession, setConfession] = useState('');
   const [apology, setApology] = useState('');
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+
 
   const handleGenerate = async () => {
     if (!confession.trim()) return;
@@ -48,10 +52,18 @@ function App() {
       </button>
 
       {apology && (
-        <div className="apology-box">
-          <h2>Your Apology</h2>
-          <p>{apology}</p>
-        </div>
+        <>
+          <div className="apology-box">
+            <h2>Your Apology</h2>
+            <p>{apology}</p>
+          </div>
+
+          <div className="video-button">
+            <button onClick={() => navigate('/record', { state: { script: apology } })}>
+              Want to record your apology video now?
+            </button>
+          </div>
+        </>
       )}
     </div>
   );

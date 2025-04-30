@@ -1,3 +1,5 @@
+/* App.jsx */
+
 .app {
   max-width: 600px;
   margin: 0 auto;
@@ -42,4 +44,148 @@ button {
 
 .apology-box p {
   color: #fff;
+}
+
+
+/* RecordStudio.jsx */
+
+.record-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.studio-title {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.webcam-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.webcam-preview {
+  width: 480px;
+  height: 360px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.bw .webcam-preview {
+  filter: grayscale(100%);
+}
+
+.countdown-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-weight: bold;
+  color: #D72638;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.teleprompter {
+  max-height: 150px;
+  overflow-y: scroll;
+  margin: 1rem auto;
+  padding: 1rem;
+  color: white;
+  border-left: 4px solid #D72638;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.start-button{
+  margin-top: 1.5rem;
+}
+
+.controls-row {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.controls-row button,
+.start-button-row button {
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  background: #D72638;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.tele-line {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.clown-overlay {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-size: 6rem;
+  transform: translate(-50%, -50%) scale(1);
+  animation: zoomIn 4s ease-in-out forwards;
+  z-index: 5;
+}
+
+@keyframes zoomIn {
+  to {
+    transform: translate(-50%, -50%) scale(1.8);
+  }
+}
+
+.video-preview {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.saved-overlay {
+  position: fixed;
+  bottom: 30px;
+  background: #4caf50;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  animation: fadeInOut 3s ease-in-out;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.recording-warning {
+  color: #ffa726;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  max-width: 90%;
+}
+
+.start-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
